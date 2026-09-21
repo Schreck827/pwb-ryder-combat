@@ -11,7 +11,7 @@ export type ReactionTrigger = "before_attack" | "after_hit";
 
 export interface ResourceCost { mode: CostMode; value: number; }
 export interface Weapon {
-  id:string; name:string; ammo:number; ammoCost:ResourceCost; energyCost:ResourceCost; heatCost:ResourceCost;
+  id:string; name:string; ammo:number; maxAmmo:number; ammoCost:ResourceCost; energyCost:ResourceCost; heatCost:ResourceCost;
   damage:string; toHit:number; range:number; fireRate:number; critical:number; effect:string;
   attackType:AttackType; status:string; soundUrl:string;
 }
@@ -46,6 +46,6 @@ export const defaultRyder=():RyderData=>({
   energy:100,maxEnergy:100,energyBonus:0,heat:0,heatCapacity:100,heatCapacityBonus:0,heatVent:30,heatVentBonus:0,
   evasion:15,evasionBonus:0,sensor:1200,sensorBonus:0,attackBonus:0,damageBonus:0,techAttackBonus:0,team:"",
   energyRefresh:0,heatVentRefresh:30,cover:"none",disabled:false,meltdown:false,unstable:false,scrap:false,statuses:[],
-  weapons:[{id:crypto(),name:"New Weapon",ammo:10,ammoCost:fixed(1),energyCost:fixed(0),heatCost:fixed(0),damage:"1d10",toHit:0,range:1200,fireRate:1,critical:20,effect:"",attackType:"ranged",status:"",soundUrl:""}],
+  weapons:[{id:crypto(),name:"New Weapon",ammo:10,maxAmmo:10,ammoCost:fixed(1),energyCost:fixed(0),heatCost:fixed(0),damage:"1d10",toHit:0,range:1200,fireRate:1,critical:20,effect:"",attackType:"ranged",status:"",soundUrl:""}],
   actions:[],reactions:[],components:[],visibility:{stats:"everyone",weapons:"everyone",attacks:"everyone",sensor:"gm",structure:"everyone",heat:"everyone",saves:"everyone"}
 });
