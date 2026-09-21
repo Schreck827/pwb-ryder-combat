@@ -1,14 +1,14 @@
 {
   "name": "PWB Ryder Combat",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "manifest_version": 1,
-  "description": "Project World Beyond Ryder character, weapon, combat, structure, heat and sensor tools.",
+  "description": "Project World Beyond Ryder character, weapon, combat, multiplayer announcements, range, sensor and reaction tools.",
   "action": {
     "title": "PWB Ryder",
     "icon": "/icon.svg",
     "popover": "/",
     "width": 460,
-    "height": 760
+    "height": 820
   },
   "background_url": "/background.html"
 }
