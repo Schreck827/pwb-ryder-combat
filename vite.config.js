@@ -8,4 +8,8 @@ export default defineConfig({
       origin: 'https://www.owlbear.rodeo',
     },
   },
+  preview: {
+    host: '0.0.0.0',
+    allowedHosts: ['pwb-ryder-combat.onrender.com'],
+  },
 });
